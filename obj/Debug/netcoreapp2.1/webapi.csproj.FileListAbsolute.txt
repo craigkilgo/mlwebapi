@@ -1,0 +1,14 @@
+/media/craig/2TB/DB/Dropbox/nlp/webapi/bin/Debug/netcoreapp2.1/webapi.deps.json
+/media/craig/2TB/DB/Dropbox/nlp/webapi/bin/Debug/netcoreapp2.1/webapi.runtimeconfig.json
+/media/craig/2TB/DB/Dropbox/nlp/webapi/bin/Debug/netcoreapp2.1/webapi.runtimeconfig.dev.json
+/media/craig/2TB/DB/Dropbox/nlp/webapi/bin/Debug/netcoreapp2.1/webapi.dll
+/media/craig/2TB/DB/Dropbox/nlp/webapi/bin/Debug/netcoreapp2.1/webapi.pdb
+/media/craig/2TB/DB/Dropbox/nlp/webapi/obj/Debug/netcoreapp2.1/webapi.csprojAssemblyReference.cache
+/media/craig/2TB/DB/Dropbox/nlp/webapi/obj/Debug/netcoreapp2.1/webapi.csproj.CoreCompileInputs.cache
+/media/craig/2TB/DB/Dropbox/nlp/webapi/obj/Debug/netcoreapp2.1/webapi.RazorAssemblyInfo.cache
+/media/craig/2TB/DB/Dropbox/nlp/webapi/obj/Debug/netcoreapp2.1/webapi.RazorAssemblyInfo.cs
+/media/craig/2TB/DB/Dropbox/nlp/webapi/obj/Debug/netcoreapp2.1/webapi.AssemblyInfoInputs.cache
+/media/craig/2TB/DB/Dropbox/nlp/webapi/obj/Debug/netcoreapp2.1/webapi.AssemblyInfo.cs
+/media/craig/2TB/DB/Dropbox/nlp/webapi/obj/Debug/netcoreapp2.1/webapi.RazorTargetAssemblyInfo.cache
+/media/craig/2TB/DB/Dropbox/nlp/webapi/obj/Debug/netcoreapp2.1/webapi.dll
+/media/craig/2TB/DB/Dropbox/nlp/webapi/obj/Debug/netcoreapp2.1/webapi.pdb
