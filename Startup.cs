@@ -44,7 +44,14 @@ namespace webapi
             builder.WithOrigins("https://localhost:5001")
                 .AllowAnyHeader()
             );
-            app.UseHttpsRedirection();
+            
+            app.UseForwardedHeaders(new ForwardedHeadersOptions
+            {
+                ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto
+            });
+
+            app.UseAuthentication();
+            //app.UseHttpsRedirection();
             app.UseMvc();
         }
     }
