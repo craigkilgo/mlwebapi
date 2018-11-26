@@ -45,12 +45,9 @@ namespace webapi
                 .AllowAnyHeader()
             );
             
-            app.UseForwardedHeaders(new ForwardedHeadersOptions
-            {
-                ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto
-            });
+            app.UseForwardedHeaders();
 
-            app.UseAuthentication();
+            
             //app.UseHttpsRedirection();
             app.UseMvc();
         }

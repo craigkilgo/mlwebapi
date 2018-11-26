@@ -26,6 +26,7 @@
         "dependencies": {
           "Microsoft.AspNetCore.App": "2.1.1",
           "Microsoft.AspNetCore.Cors": "2.1.1",
+          "Microsoft.AspNetCore.HttpOverrides": "2.1.1",
           "Microsoft.AspNetCore.Razor.Design": "2.1.2",
           "Microsoft.ML": "0.7.0",
           "Microsoft.NETCore.App": "2.1.0"
