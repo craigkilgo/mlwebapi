@@ -28,8 +28,12 @@ namespace webapi
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             services.AddCors(options =>
             {
-                options.AddPolicy("AllowSpecificOrigin",
-                    builder => builder.WithOrigins("http://ml2.craigkilgo.com"));
+                options.AddPolicy("AllowAllMethods",
+                    builder =>
+                    {
+                        builder.WithOrigins("http://ml2.craigkilgo.com")
+                            .AllowAnyMethod();
+                    });
             });
         }
 
@@ -44,7 +48,7 @@ namespace webapi
             {
                 app.UseHsts();
             }
-            app.UseCors("AllowSpecificOrigin");
+            app.UseCors("AllowAllMethods");
 
             app.UseForwardedHeaders();
 
