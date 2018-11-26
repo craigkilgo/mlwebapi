@@ -41,13 +41,13 @@ namespace webapi
                 app.UseHsts();
             }
             app.UseCors(builder =>
-            builder.WithOrigins("https://localhost:5001")
+            builder.WithOrigins("http://ml2.craigkilgo.com")
                 .AllowAnyHeader()
             );
-            
+
             app.UseForwardedHeaders();
 
-            
+
             //app.UseHttpsRedirection();
             app.UseMvc();
         }
