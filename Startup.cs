@@ -31,7 +31,7 @@ namespace webapi
                 options.AddPolicy("AllowAllMethods",
                     builder =>
                     {
-                        builder.WithOrigins("http://ml2.craigkilgo.com")
+                        builder.AllowAnyOrigin()
                             .AllowAnyMethod()
                             .AllowAnyHeader();
                     });
