@@ -26,7 +26,11 @@ namespace webapi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
-            services.AddCors();
+            services.AddCors(options =>
+            {
+                options.AddPolicy("AllowSpecificOrigin",
+                    builder => builder.WithOrigins("http://ml2.craigkilgo.com"));
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -40,10 +44,7 @@ namespace webapi
             {
                 app.UseHsts();
             }
-            app.UseCors(builder =>
-            builder.WithOrigins("http://ml2.craigkilgo.com")
-                .AllowAnyHeader()
-            );
+            app.UseCors("AllowSpecificOrigin");
 
             app.UseForwardedHeaders();
 
