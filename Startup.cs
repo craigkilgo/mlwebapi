@@ -32,7 +32,8 @@ namespace webapi
                     builder =>
                     {
                         builder.WithOrigins("http://ml2.craigkilgo.com")
-                            .AllowAnyMethod();
+                            .AllowAnyMethod()
+                            .AllowAnyHeader();
                     });
             });
         }
